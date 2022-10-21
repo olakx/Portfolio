@@ -25,9 +25,9 @@ nav{
         .nav__name{
             h2{
                 cursor: pointer;
-                color: rgb(43, 43, 155);
-                font-weight: 600;
-                font-size: 18px;
+                color: rgb(0, 136, 169);
+                font-weight: 800;
+                font-size: 1em;
             }
         }
         .nav__menu{
@@ -55,6 +55,39 @@ nav{
             display: flex;
             align-items: center;
             column-gap: 15%;    
+        }
+    }
+}
+
+.tech{
+    @extend .info;
+    height: 100vh;  
+    background-color: #101010;
+    h2{
+        text-align: center;
+        margin-top: 3em;
+        font-size: 3em;
+        font-weight: 800;
+        color: rgb(0, 136, 169)
+    }
+    .tech__container{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        .tech__icons{
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 7em;                  
+                li{
+                    i{
+                        text-decoration: none;
+                        line-height: 2em;
+                        font-size: 6em;
+                        border: 0px;
+                    }
+                }
+            }
         }
     }
 }

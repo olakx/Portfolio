@@ -26,9 +26,9 @@ nav .nav__container {
 }
 nav .nav__container .nav__name h2 {
   cursor: pointer;
-  color: rgb(43, 43, 155);
-  font-weight: 600;
-  font-size: 18px;
+  color: rgb(0, 136, 169);
+  font-weight: 800;
+  font-size: 1em;
 }
 nav .nav__container .nav__menu ul {
   cursor: pointer;
@@ -37,22 +37,50 @@ nav .nav__container .nav__menu ul {
   column-gap: 3em;
 }
 
-.info {
+.info, .tech {
   background-color: #1d1f20;
   color: #96979e;
   height: 100vh;
 }
-.info .info__container {
+.info .info__container, .tech .info__container {
   height: 100vh;
   margin-right: 15%;
   margin-left: 15%;
   padding-top: 15%;
   padding-bottom: 15%;
 }
-.info .info__container .info__content {
+.info .info__container .info__content, .tech .info__container .info__content {
   display: flex;
   align-items: center;
   column-gap: 15%;
+}
+
+.tech {
+  height: 100vh;
+  background-color: #101010;
+}
+.tech h2 {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 3em;
+  font-weight: 800;
+  color: rgb(0, 136, 169);
+}
+.tech .tech__container {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.tech .tech__container .tech__icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7em;
+}
+.tech .tech__container .tech__icons ul li i {
+  text-decoration: none;
+  line-height: 2em;
+  font-size: 6em;
+  border: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */
