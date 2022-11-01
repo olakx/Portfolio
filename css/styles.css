@@ -26,14 +26,14 @@ nav .nav__container {
 }
 nav .nav__container .nav__name h2 {
   cursor: pointer;
-  color: rgb(0, 136, 169);
-  font-weight: 800;
+  color: rgb(21, 177, 216);
+  font-weight: 900;
   font-size: 1em;
 }
 nav .nav__container .nav__menu ul {
   cursor: pointer;
   display: flex;
-  font-weight: 800;
+  font-weight: 900;
   column-gap: 3em;
 }
 
@@ -55,16 +55,63 @@ nav .nav__container .nav__menu ul {
   column-gap: 15%;
 }
 
+.about {
+  height: 100vh;
+}
+.about .about__container {
+  margin: 5%;
+}
+.about .about__container .about__title h1 {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: whitesmoke;
+}
+.about .about__container .about__me {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5em;
+}
+.about .about__container .about__me .about__text h2 {
+  margin-left: 8%;
+  font-weight: 900;
+  font-size: 1.8em;
+  color: rgb(21, 177, 216);
+}
+.about .about__container .about__me .about__text p {
+  margin-top: 3%;
+  line-height: 1.7em;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #96979e;
+}
+.about .about__container .about__me .about__hobbies h2 {
+  margin-left: 40%;
+  font-weight: 900;
+  font-size: 1.8em;
+  color: rgb(21, 177, 216);
+}
+.about .about__container .about__me .about__hobbies ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10em;
+  margin-left: 18%;
+}
+.about .about__container .about__me .about__hobbies ul li {
+  line-height: 7em;
+}
+
 .tech {
   height: 100vh;
-  background-color: #101010;
+  background-color: #96979e;
 }
 .tech h2 {
   text-align: center;
   margin-top: 3em;
   font-size: 3em;
   font-weight: 800;
-  color: rgb(0, 136, 169);
+  color: rgb(21, 177, 216);
 }
 .tech .tech__container {
   padding-top: 10%;

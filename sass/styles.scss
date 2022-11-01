@@ -8,6 +8,11 @@
     font-size: 100%;
 }
 
+$first-color : rgb(21, 177, 216);
+$second-color : #96979e;
+$third-color : #96979e;
+$fourth-color : #101010;
+
 body{
     background-color: #101010;
     font-family: "Be Vietnam Pro", sans-serif;
@@ -25,16 +30,16 @@ nav{
         .nav__name{
             h2{
                 cursor: pointer;
-                color: rgb(0, 136, 169);
-                font-weight: 800;
+                color: $first-color;
+                font-weight: 900;
                 font-size: 1em;
-            }
+            }   
         }
         .nav__menu{
             ul{
                 cursor: pointer;
                 display: flex;
-                font-weight: 800;
+                font-weight: 900;
                 column-gap: 3em;    
             }
         }
@@ -59,16 +64,69 @@ nav{
     }
 }
 
+.about{
+    height: 100vh;
+    .about__container{
+        margin: 5%;
+        .about__title{
+            h1{
+                text-align: center;
+                font-size: 3.5em;
+                font-weight: 900;
+                color: whitesmoke;
+            }
+        }
+        .about__me{
+            margin-top: 10%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5em;
+            .about__text{
+                h2{
+                    margin-left: 8%;
+                    font-weight: 900;
+                    font-size: 1.8em;
+                    color: $first-color;
+                }
+                p{
+                    margin-top: 3%;
+                    line-height: 1.7em;
+                    font-size: 1.3em;
+                    font-weight: 600;
+                    color: $second-color;
+                }
+            }
+            .about__hobbies{
+                h2{
+                    margin-left: 40%;
+                    font-weight: 900;
+                    font-size: 1.8em;
+                    color: $first-color;
+                }
+                ul{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 10em;
+                    margin-left: 18%;
+                    li{
+                        line-height: 7em;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .tech{
     @extend .info;
     height: 100vh;  
-    background-color: #101010;
+    background-color: #96979e;
     h2{
         text-align: center;
         margin-top: 3em;
         font-size: 3em;
         font-weight: 800;
-        color: rgb(0, 136, 169)
+        color: $first-color;
     }
     .tech__container{
         padding-top: 10%;
