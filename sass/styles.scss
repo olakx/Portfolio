@@ -8,14 +8,18 @@
     font-size: 100%;
 }
 
-$first-color : rgb(21, 177, 216);
+$first-color : rgb(0, 204, 255);
 $second-color : #96979e;
-$third-color : #96979e;
+$third-color : #f5f5f5;
 $fourth-color : #101010;
+$fifth-color : #1d1f20;
+
+$colors: red, blue, yellow, green, black, white;
 
 body{
     background-color: #101010;
     font-family: "Be Vietnam Pro", sans-serif;
+    font-size: large;
 }
 
 nav{
@@ -32,7 +36,6 @@ nav{
                 cursor: pointer;
                 color: $first-color;
                 font-weight: 900;
-                font-size: 1em;
             }   
         }
         .nav__menu{
@@ -47,25 +50,47 @@ nav{
 }
 
 .info{
-    background-color: #1d1f20;
+    background-color: $fifth-color;
     color: #96979e;
     height: 100vh;
     .info__container{
         height: 100vh;
-        margin-right: 15%;
-        margin-left: 15%;
+        margin-right: 5%;
+        margin-left: 5%;
         padding-top: 15%;
         padding-bottom: 15%;
         .info__content{
             display: flex;
             align-items: center;
-            column-gap: 15%;    
+            column-gap: 25%;    
+            .info__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                h1{
+                    strong{
+                        color: $third-color;
+                    }
+                    margin-bottom: 5px;
+                    font-weight: 900;
+                    font-size: 200%;
+                    color: $first-color;
+                }
+                h2{
+                    margin-bottom: 2em;
+                    font-weight: 900;
+                    font-size: 130%;
+                    justify-self: flex-end;
+                    color: $third-color;
+                }
+            }
         }
     }
 }
 
 .about{
     height: 100vh;
+    margin-bottom: 3em;
     .about__container{
         margin: 5%;
         .about__title{
@@ -118,34 +143,46 @@ nav{
 }
 
 .tech{
-    @extend .info;
     height: 100vh;  
-    background-color: #96979e;
-    h2{
-        text-align: center;
-        margin-top: 3em;
-        font-size: 3em;
-        font-weight: 800;
-        color: $first-color;
-    }
+    background-color: $fifth-color;
     .tech__container{
-        padding-top: 10%;
+        padding-top: 7%;
         padding-bottom: 10%;
+        h2{
+            text-align: center; 
+            font-size: 3em;
+            font-weight: 900;
+            color: $third-color;
+        }
         .tech__icons{
+            margin-top: 5em;
             ul{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 column-gap: 7em;                  
                 li{
+                    color: #96979e;
+
+                        @each $color in $colors{
+                            &:hover{
+                                &:nth-child(1){
+                                    color: #{$color};
+                                }
+                            }
+                        }
+
+                    
+                    
                     i{
+                        
                         text-decoration: none;
                         line-height: 2em;
                         font-size: 6em;
-                        border: 0px;
                     }
+
+                }
                 }
             }
         }
     }
-}
